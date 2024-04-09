@@ -36,7 +36,11 @@ command_exists() {
 install_tools() {
     local tools=("curl" "awk" "sort" "tr" "grep" "sed" "findomain" "subfinder" "amass" "assetfinder")
     local success=true
-
+curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux-i386.zip
+unzip findomain-linux-i386.zip
+chmod +x findomain
+sudo mv findomain /usr/bin/findomain
+findomain --help
     echo -e "${bold}${blue}Checking and installing required tools:${end}"
     for tool in "${tools[@]}"; do
         printf "Checking for $tool..."
