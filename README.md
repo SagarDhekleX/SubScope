@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="icon.png" alt="SubScope Logo" width="200px">
+  <img src="icon.png" alt="SubScope Logo" width="400px">
 </div>
 
 # SubScope
